@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 1fr;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    display: block;
+    background-color: rgb(31, 37, 66); 
+    font-style: initial;
+    border: 5px solid rgb(255, 255, 255); 
+    padding: 20px; 
+    min-height: 100vh;
+}
+
+header > h1.first-heading {
+    font-family: 'Courier New', Courier, monospace; 
+    font-style: initial;
+    font-size: 14mm;
+    color: aliceblue;
+    letter-spacing: -6px;
+    margin-bottom: 0cm; 
+}
+
+header > h2.second-heading {  
+    font-size: 8mm;
+    color: antiquewhite;
+}
+
+header > img.heading-picture {
+
+    display: block;
+    float: right;
+    width: 200px;
+    height: auto;    
+    margin-right: 20px;
+    margin-top: ;
+    margin-bottom: 50%;
+}
+
+
