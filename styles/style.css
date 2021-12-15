@@ -1,83 +1,121 @@
+body {
+    min-height: 200vh;
+}
+
 .container {
     display: grid;
-    min-height: 100vh;
+    background-color: bisque;
+    min-height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 1fr;
     gap: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 1px solid #000000;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+header {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #258cc5; 
+    font-style: initial;
+    padding: 20px; 
+    min-height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+} 
+
+header > h1 > div.first-heading {
+    font-family: 'Courier New', Courier, monospace; 
+    font-style: initial;
+    font-size: 14mm;
+    color: aliceblue;
+    letter-spacing: -6px;
+    margin-bottom: 0cm;
+}
+
+header > h1 > div.second-heading {
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 8mm;
+    color: antiquewhite;
+} 
+
+header > h1 > img.heading-picture {
+
+    display: block;
+    float: right; 
+    width: 200px;
+    height: auto;    
+    margin-right: 20px;
+    margin-bottom: 50%;
 }
 
 .form-stage1 {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 1px solid #000000;
+    grid-template-rows: auto auto auto 1fr;
     grid-column-start: 1;
     grid-column-end: 4; 
-
+    
 }
 
 .form-stage1 > div.first-form-text {
     display: grid;
     grid-gap: 10px;
+    background-color: white;
+    border: 1px solid #000000;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     border: 1px solid #000000;
     grid-column-start: 1;
     grid-column-end: 4; 
-    font-weight: bold; 
-    font-size: 10mm;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal; 
+    font-size: 8mm;
+    padding-top: 20px;
+    height: 50px;
 }
 
 .form-stage1 > div.first-form-picture {
     display: grid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
     grid-gap: 10px;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     border: 1px solid #000000;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 3; 
-}
+    grid-row-end: 6; 
+} 
 
-header {
-    display: block;
-    background-color: #258cc5; 
-    font-style: initial;
-    border: 5px solid rgb(255, 255, 255); 
-    padding: 20px; 
-    min-height: auto;
+.form-stage1 > div.address-field, .form-stage1 > div.country-field {
+    display: grid;
+    border: 1px solid #000000;
+    background-color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #000000;
     grid-column-start: 1;
-    grid-column-end: 4;
-}
+    grid-column-end: 3;
+    height: 30px;
+} 
 
-header > h1.first-heading {
-    font-family: 'Courier New', Courier, monospace; 
-    font-style: initial;
-    font-size: 14mm;
-    color: aliceblue;
-    letter-spacing: -6px;
-    margin-bottom: 0cm; 
-}
-
-header > h2.second-heading {  
-    font-size: 8mm;
-    color: antiquewhite;
-}
-
-header > img.heading-picture {
-
+.form-stage1 > div.company-field, .form-stage1 > div.zip-field,
+.form-stage1 > div.city-field,
+.form-stage1 > div.email-field {
     display: block;
-    float: right;
-    width: 200px;
-    height: auto;    
-    margin-right: 20px;
-    margin-top: ;
-    margin-bottom: 50%;
+    border: 1px solid #000000;
+    background-color: white;
+    height: 30px;
 }
+
+
 
 
