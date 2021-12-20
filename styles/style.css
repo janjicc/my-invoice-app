@@ -1,5 +1,7 @@
 body {
-    min-height: 300vh;
+    display: block;
+    box-sizing: content-box;
+    min-height: auto;
 }
 
 .container {
@@ -7,9 +9,8 @@ body {
     background-color: bisque;
     min-height: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 1fr 1fr;
+    grid-template-rows: 300px auto 1fr;
     gap: 10px;
-    min-height: 300vh;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -141,7 +142,47 @@ header > img.heading-picture {
 
 .form-step2 {
     display: grid;
+    min-height: auto;
+    width: 66.6%;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: ;
+    grid-template-rows: 1fr auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.form-step2 > div.second-step-text {
+    display: grid;
+    grid-gap: 10px;
+    height: auto;
+    width: 150%;
+    background-color: white;
+    border: 1px solid #000000;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border: 1px solid #000000;
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal; 
+    font-size: 8mm;
+    padding-top: 20px;
+    height: 50px;
+}
+
+.form-step2 > input.customer-address {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.form-step2 > input.customer-name, .form-step2 > input.customer-email,
+.form-step2 > input.invoice-number, .form-step2 > input.customer-address,
+.form-step2 > input.date, .form-step2 > input.customer-city,
+.form-step2 > input.customer-zip, .form-step2 > input.customer-country {
+    border: 1px solid #000000;
+    background-color: white;
+    height: 30px;
 }
