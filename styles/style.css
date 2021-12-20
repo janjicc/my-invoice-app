@@ -1,5 +1,5 @@
 body {
-    min-height: 200vh;
+    min-height: 300vh;
 }
 
 .container {
@@ -7,13 +7,25 @@ body {
     background-color: bisque;
     min-height: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 300px 1fr 1fr;
     gap: 10px;
+    min-height: 300vh;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 
+
+.form-step1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: 27vh;
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    
+}
 header {
     display: grid;
     grid-gap: 10px;
@@ -21,48 +33,52 @@ header {
     font-style: initial;
     padding: 20px; 
     min-height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 4;
 } 
 
-header > h1 > div.first-heading {
+header > div.first-heading {
+    display: grid;
     font-family: 'Courier New', Courier, monospace; 
     font-style: initial;
     font-size: 14mm;
+    padding-top: 80px;
     color: aliceblue;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     letter-spacing: -6px;
     margin-bottom: 0cm;
 }
 
-header > h1 > div.second-heading {
+header > div.second-heading {
     font-family: 'Courier New', Courier, monospace;  
     font-size: 8mm;
     color: antiquewhite;
 } 
 
-header > h1 > img.heading-picture {
-
-    display: block;
-    float: right; 
-    width: 200px;
-    height: auto;    
-    margin-right: 20px;
-    margin-bottom: 50%;
-}
-
-.form-stage1 {
+header > img.heading-picture {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto 1fr;
-    grid-column-start: 1;
-    grid-column-end: 4; 
-    
+    justify-self: end;
+    padding-top: 50px;
+    width: 200px; 
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;    
+    margin-right: 20px;
+    margin-bottom: 20px; 
 }
 
-.form-stage1 > div.first-form-text {
+.form-step1 > div.first-step-text {
     display: grid;
     grid-gap: 10px;
     background-color: white;
@@ -79,7 +95,7 @@ header > h1 > img.heading-picture {
     height: 50px;
 }
 
-.form-stage1 > div.first-form-picture {
+.form-step1 > div.first-step-picture {
     display: grid;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
@@ -88,13 +104,14 @@ header > h1 > img.heading-picture {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     border: 1px solid #000000;
+    height: auto;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 6; 
 } 
 
-.form-stage1 > div.address-field, .form-stage1 > div.country-field {
+.form-step1 > input.address-field, .form-step1 > input.country-field {
     display: grid;
     border: 1px solid #000000;
     background-color: white;
@@ -104,18 +121,27 @@ header > h1 > img.heading-picture {
     border: 1px solid #000000;
     grid-column-start: 1;
     grid-column-end: 3;
-    height: 30px;
+    height: 30px; 
 } 
 
-.form-stage1 > div.company-field, .form-stage1 > div.zip-field,
-.form-stage1 > div.city-field,
-.form-stage1 > div.email-field {
+.form-step1 > div.first-step-picture > input.logo-picture {
+    display: block;
+    width: 48;
+    height: 48;
+}
+
+.form-step1 > input.company-field, .form-step1 > input.zip-field,
+.form-step1 > input.city-field,
+.form-step1 > input.email-field {
     display: block;
     border: 1px solid #000000;
     background-color: white;
     height: 30px;
 }
 
-
-
-
+.form-step2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
+}
